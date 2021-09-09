@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  background-color: #f5f4f4
+}
+
+/* Header section */
+h1 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+#header {
+  max-width: 100%;
+  background-color: #f9f7f7;
+  margin: 0 6rem 100px;
+}
+@media (max-width: 768px){
+  #header {
+    text-align: center;
+  }
+}
+@media (max-width: 1700px){
+  #header {
+    margin: auto;
+  }
+}
+
+
+.whitespace {
+  margin: 1.5rem;
+}
+
+/* container */
+.container-fluid {
+  padding: 7% 15%
+}
+
+/* Navigation */
+.navbar {
+  margin-bottom: 0;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.nav-item {
+  margin: 0 20px;
+}
+.carousel-item .card{
+  box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.2), 5px 6px 28px 0 rgba(0, 0, 0, 0.19);
+}
+/* Title */
+.title-header-content {
+  margin-top: 3.5rem;
+}
+
+.title-spec {
+  padding: 45px 0 30px;
+}
+
+.title-interjection {
+  font-style: italic;
+}
+
+.textspace {
+  line-height: 2
+}
+
+.buttonspace {
+  margin: 25px 0;
+}
+
+#header p {
+  font-family: 'Redressed', cursive;
+  font-size: 2rem;
+}
+.header-img{
+  position: relative;
+  right: -7rem;
+  top: -7rem;
+}
+@media (max-width: 1400px){
+  .header-img{
+    right: -112px;
+  }
+}
+
+/* features section */
+#features {
+  margin: 100px auto 45px;
+  text-align: center;
+  color: #495464;
+}
+
+.feature-content {
+  padding: 1.5rem 3rem;
+  border-radius: 15%;
+}
+.feature-content:hover{
+  color: #00303f;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 28px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Bold Claim Section */
+#boldclaim {
+  text-align: center;
+
+}
+.banner:hover{
+  color: #00303f;
+  text-shadow:  0 0 5px #a31c88, 2px 6px 6px #00303f, 0 5px 50px #9c1de7;
+}
+
+
+.banner {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #9ba4b4;
+}
+@media (max-width: 772px){
+#boldclaim .container-fluid{
+padding: 7% 5%;
+  }
+}
+@media (max-width: 607px){
+.banner{
+  font-size: 2rem;
+}
+}
+
+.inline-logo {
+  width: 3rem;
+}
+
+/* About Section */
+#about {
+  text-align: center;
+  line-height: 2;
+}
+
+.about-text {
+  text-align: justify;
+  color: #495464;
+  width: 40%;
+  margin: 1.5rem auto;
+}
+@media (max-width: 1142px){
+.about-text{
+  width: 100%;
+}
+}
+
+/* CTA 1 Section */
+/* #cta-banner{
+  margin: 20px 0 45px;
+  text-align: center;
+  background-image: url('images\cta-banner.jpg');
+}
+
+
+.cta-image{
+  max-width: 100%;
+  height: 250px;
+} */
+
+
+/* Experiences Section */
+#experiences {
+  text-align: center;
+  color: #495464;
+  padding: 7% 15%;
+}
+.experience-content{
+  width: 60%;
+  margin: 5px auto;
+}
+.carousel-container{
+  width: 60%;
+  margin: 30px auto 100px;
+}
+@media (max-width: 1142px){
+  .experience-content{
+    width: 100%;
+  }
+}
+@media (max-width: 1142px){
+  .carousel-container{
+    width: 350px;
+
+  }
+}
+@media (max-width: 1142px){
+.text-subtitle{
+  text-align: justify;
+}
+}
+
+/* Carousel */
+.carousel-item{
+  box-shadow: 0 8px 6px -6px black;
+}
+/* Note to make sure to get clarification of what the block does */
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+
+/* display 3 */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+  transform: translateX(0);
+}
+.carousel-control-prev-icon{
+  border-color:  #00303f;
+}
+
+  /* CTA */
+  #cta {
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #00303f;
+    line-height: 2;
+  }
+
+  .cta-content {
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+  }
+
+  /* footer */
+  #footer {
+    padding: 2% 10%;
+    line-height: 2;
+    color: #495464;
+  }
+
+  .footer-info {
+    text-align: center;
+  }
+
+  .footer-list {
+    font-size: 1rem;
+  }
+  .ref-links:link {
+    text-decoration: none;
+    color: inherit;
+    }
+    .ref-links:visited{
+      text-decoration: none;
+      color: #00303f;
+    }
+    .ref-links:hover, .ref-links:active{
+      text-decoration: underline;
+      color: #00303f;
+    }
+  .contact-icons {
+    margin: 1rem 1rem;
+
+  }
+  .contact-icons:hover{
+    color: #00303f;
+  }
